@@ -695,5 +695,21 @@
   "Dictionary.py::test_five_dick[color-test_dic0]",
   "Dictionary.py::test_five_dick[color-test_dic1]",
   "Dictionary.py::test_five_dick[color-test_dic2]",
-  "Dictionary.py::test_five_dick[color-test_dic3]"
+  "Dictionary.py::test_five_dick[color-test_dic3]",
+  "Dictionary.py::test_first_dict[first-test_dict0]",
+  "Dictionary.py::test_first_dict[first-test_dict1]",
+  "Dictionary.py::test_first_dict[first-test_dict2]",
+  "Dictionary.py::test_first_dict[first-test_dict3]",
+  "Dictionary.py::test_first_dict[second-test_dict0]",
+  "Dictionary.py::test_first_dict[second-test_dict1]",
+  "Dictionary.py::test_first_dict[second-test_dict2]",
+  "Dictionary.py::test_first_dict[second-test_dict3]",
+  "Dictionary.py::test_first_dict[1111-test_dict0]",
+  "Dictionary.py::test_first_dict[1111-test_dict1]",
+  "Dictionary.py::test_first_dict[1111-test_dict2]",
+  "Dictionary.py::test_first_dict[1111-test_dict3]",
+  "Dictionary.py::test_first_dict[2222-test_dict0]",
+  "Dictionary.py::test_first_dict[2222-test_dict1]",
+  "Dictionary.py::test_first_dict[2222-test_dict2]",
+  "Dictionary.py::test_first_dict[2222-test_dict3]"
 ]

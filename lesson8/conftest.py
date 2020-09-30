@@ -19,11 +19,28 @@ def pytest_addoption(parser):
                      type=str,
                      default='localhost',
                      )
+    parser.addoption('--port',
+                     help='port connect',
+                     type=str,
+                     default='80',
+                     )
+
+
+@pytest.fixture
+def login(new_browser, url_maker):
+    new_browser.get(f"{url_maker}/admin")
+    new_browser.find_element_by_css_selector('input[name="username"]').send_keys("user")
+    new_browser.find_element_by_css_selector('input[name="password"]').send_keys("bitnami1")
+    new_browser.find_element_by_css_selector('button[type="submit"]').click()
+    return new_browser
+
+
 
 @pytest.fixture
 def url_maker(request):
     args1 = request.config.getoption("--host")
-    return f"https://{args1}"
+    port = request.config.getoption("--port")
+    return f"http://{args1}:{port}"
 @pytest.fixture
 def new_browser(request):
     args = request.config.getoption("--brows")
@@ -33,15 +50,17 @@ def new_browser(request):
         option = webdriver.ChromeOptions()
         # option.add_argument("--headless")
         option.add_argument("--start-fullscreen")
-        wd = webdriver.Chrome(options=option)
+        option.add_argument('ignore-certificate-errors')
+        wd = webdriver.Chrome(chrome_options=option)
     elif args == "ff":
         # gdd = GeckoDriverManager
         # gdd.download_and_install()
         option = webdriver.FirefoxOptions()
-        option.add_argument("--headless")
-        # option.add_argument("--start-maximized")
+        # option.add_argument("--headless")
+        option.add_argument("--start-maximized")
         option.add_argument("--kiosk")
-        wd = webdriver.Firefox(options=option)
+        option.accept_insecure_certs = True
+        wd = webdriver.Firefox(firefox_profile=option)
     elif args == "ie":
         # gdd = GeckoDriverManager
         # gdd.download_and_install()

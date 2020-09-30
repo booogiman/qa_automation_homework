@@ -891,3 +891,29 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 1596099371115	Marionette	INFO	Listening on port 56388
 1596099371363	Marionette	WARN	TLS certificate errors will be ignored for this session
 1596099371884	Marionette	INFO	Stopped listening on port 56388
+1599574144924	geckodriver	INFO	Listening on 127.0.0.1:53336
+1599574145432	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--kiosk" "-foreground" "-no-remote" "-profile" "C:\\Users\\booog\\AppData\\Local\\Temp\\rust_mozprofileyepdOh"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599574149021	Marionette	INFO	Listening on port 53345
+1599574149094	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://s.sweb.ru/js/jquery-1.3.2-OLD.js?nc200820204, line 19: unreachable code after return statement
+JavaScript warning: https://mc.yandex.ru/metrika/watch.js, line 54: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://mc.yandex.ru/metrika/watch.js, line 54: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1599574151457	Marionette	INFO	Stopped listening on port 53345
+1599574175625	geckodriver	INFO	Listening on 127.0.0.1:53422
+1599574176127	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--kiosk" "-foreground" "-no-remote" "-profile" "C:\\Users\\booog\\AppData\\Local\\Temp\\rust_mozprofileIpD9RB"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599574178912	Marionette	INFO	Listening on port 53428
+1599574179254	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://s.sweb.ru/js/jquery-1.3.2-OLD.js?nc200820204, line 19: unreachable code after return statement
+1599574181544	Marionette	INFO	Stopped listening on port 53428
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

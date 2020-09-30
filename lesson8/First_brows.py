@@ -17,7 +17,8 @@ def test_first_brow(new_browser, url_maker):
     # new_browser.get(url_maker)
     # print(new_browser)
     # print(url_maker)
-    new_browser.get("http://cp.vagrant2.devel.sweb.ru:10001/main/")
+    # new_browser.get("http://cp.vagrant2.devel.sweb.ru:10001/main/")
     # content = new_browser.find_element_by_css_selector('a[href^="http://localhost/index.php?route=product/product&amp;product_id=30"]')
     # print(content)
-    # assert new_browser.title == 'Your Store'
+    new_browser.get(url_maker)
+    assert new_browser.title == 'Your Store'
